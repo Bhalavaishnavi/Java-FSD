@@ -1,0 +1,69 @@
+package phase1;
+import java.util.Scanner;
+
+public class ArithmeticCalculator{
+	  
+	    public static void main(String[] args)
+	    {
+	   
+	        double n1, n2;
+	  
+	        Scanner obj = new Scanner(System.in);
+	  
+	        System.out.println("Enter the numbers");
+	  
+	        n1 = obj.nextDouble();
+	  
+	        n2 = obj.nextDouble();
+	  
+	        System.out.println("Choose an operator +,-,*,/");
+	  
+	        char ch = obj.next().charAt(0);
+	  
+	        double a = 0;
+	  
+	        switch (ch) {
+	  
+	        //Add two numbers
+	        case '+':
+	  
+	            a = n1 + n2;
+	  
+	            break;
+	  
+	        //Subtract two numbers
+	        case '-':
+	  
+	            a = n1 - n2;
+	  
+	            break;
+	  
+	        //Multiply two numbers
+	        case '*':
+	  
+	            a = n1 * n2;
+	  
+	            break;
+	  
+	        //Divide two numbers
+	        case '/':
+	  
+	            a = n1 / n2;
+	  
+	            break;
+	  
+	        default:
+	  
+	            System.out.println("Invalid");
+	  
+	            break;
+	        }
+	  
+	        System.out.println("The Output is:");
+	  
+	        System.out.println();
+
+	        System.out.println(n1 + " " + ch + " " + n2
+	                           + " = " + a);
+	    }
+	}
